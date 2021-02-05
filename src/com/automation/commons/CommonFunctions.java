@@ -8,8 +8,7 @@ public class CommonFunctions {
 	ChromeDriver driver;
         		
 	public WebDriver getDriver() {
-    	System.setProperty("webdriver.chrome.verboseLogging", "true");
-
+	    System.setProperty("webdriver.chrome.driver","C:\\Selenium\\selenium-java-3.141.59\\chromedriver.exe");  
     	this.driver = new ChromeDriver();
     	return driver;
     }

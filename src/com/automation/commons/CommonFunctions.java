@@ -5,10 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CommonFunctions {
 	
-	WebDriver driver;
+	ChromeDriver driver;
         		
 	public WebDriver getDriver() {
-    	System.setProperty("webdriver.chrome.driver","C:\\Selenium\\selenium-java-3.141.59\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.verboseLogging", "true");
+
     	this.driver = new ChromeDriver();
     	return driver;
     }
@@ -16,6 +17,7 @@ public class CommonFunctions {
 	public void getURL(String WebPage) {
 		driver.manage().window().maximize();
 		driver.get(WebPage);
+		
 	}
 	
 }

@@ -15,7 +15,11 @@ public class Runner {
 		cf.getURL("http://www.htmlcanvasstudio.com/");
 		DrawPO draw = new DrawPO(driver);
 		draw.clickLine();
-		draw.drawLine();
+		draw.drawPlus();
+		draw.clickRectangle();
+		draw.drawRectangle();
+		draw.clickEraser();
+		draw.eraser();
 	}
 
 }
